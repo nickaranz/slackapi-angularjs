@@ -1,3 +1,11 @@
+/*!
+ * ng-deg.slackapi JavaScript Library v1.0
+ * https://github.com/nickaranz/slackapi-angularjs
+ *
+ * Copyright (c) 2015 Nick Aranzamendi nickaranz@gmail.com
+ * Released under the MIT license 
+ */
+
 'use strict';
 
 (function (angular) {
