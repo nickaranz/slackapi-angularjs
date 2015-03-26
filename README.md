@@ -14,6 +14,8 @@ For a quick POC, you can manually set a default token on `deg.slackapi.module.js
  });
  
 ```
+Download build and reference:
+`<script src="../ng-deg.slackapi.min.js"></script>`
 
 ### Load Module
 `angular.module("app", ['Deg.SlackApi']);`
