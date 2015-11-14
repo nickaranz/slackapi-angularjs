@@ -1,6 +1,14 @@
 # slackapi-angularjs
 AngularJS module wrapper for the Slack Web API and oAuth helpers for token authentication.
 
+## Install
+`bower install --save-dev slackapi-angularjs`
+
+or
+
+Download build and reference:
+`<script src="../ng-deg.slackapi.min.js"></script>`
+
 ## Usage
 Most methods documented here https://api.slack.com/methods are wrapped in an angular service. 
 So far, only `im `, and `group` calls are not supported yet.
@@ -14,8 +22,6 @@ For a quick POC, you can manually set a default token on `deg.slackapi.module.js
  });
  
 ```
-Download build and reference:
-`<script src="../ng-deg.slackapi.min.js"></script>`
 
 ### Load Module
 `angular.module("app", ['Deg.SlackApi']);`
