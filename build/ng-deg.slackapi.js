@@ -310,7 +310,7 @@
                 channel: channeId,
                 text: message
             };
-            executeApiCall("channels.info", params, callback);
+            executeApiCall("chat.postMessage", params, callback);
         }
         function deleteMessage(channeId, timestamp, callback, token) {
             var params = {
