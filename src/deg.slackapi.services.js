@@ -165,12 +165,17 @@
             slackConfig.DefaultToken = token;
             authTest(callback);
         }
-        function getAccessToken(client, secret, code, callback) {
+        function getAccessToken(client, secret, code, redirect_uri, callback) {
             var params = {
                 client_id: client,
                 client_secret: secret,
                 code: code
             };
+
+            if (angular.isDefined(redirect_uri)) {
+                params.redirect_uri = redirect_uri;
+            }
+
             executeApiCall("oauth.access", params, callback);
         }
         function authTest(callback, token) {
